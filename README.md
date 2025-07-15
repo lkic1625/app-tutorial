@@ -2,7 +2,7 @@
 
 Hello, world!
 
-This project is a tutorial to develop app-server of Channel Corp. App Store.
+This project is a tutorial to develop an app server of Channel Corp. App Store.
 
 Thank you for visiting. 😁
 
@@ -18,23 +18,16 @@ Thank you for visiting. 😁
 
 ## Prerequisite
 
-- [go](https://go.dev/) v1.21
-- [yarn](https://yarnpkg.com/) v4; Check [here](wam) for wam.
+- [Rust](https://www.rust-lang.org/) 1.87+
+- [yarn](https://yarnpkg.com/) v4; Check [here](wam) for building the WAM.
 
 ## Installation
 
-It is available to download the necessary packages for the project by running one of the following commands:
-
-1. Use makefile.
+Install Rust dependencies using Cargo and fetch TypeScript packages for the WAM.
+Run the following command:
 
 ```sh
 $ make init
-```
-
-2. Use go cli.
-
-```sh
-$ go mod tidy
 ```
 
 ## Build
@@ -42,7 +35,7 @@ $ go mod tidy
 ### Build the whole project
 
 ```sh
-$ make build # it builds wam, either.
+$ make build # builds the Rust server and the WAM
 ```
 
 ### Build only wam
@@ -82,6 +75,8 @@ bot:
 ```sh
 $ STAGE="your stage" make dev
 ```
+
+This command builds the project and starts the Rust server using `cargo run`.
 
 The default setting for the stage is `development`.
 

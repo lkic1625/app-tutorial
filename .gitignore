@@ -3,5 +3,5 @@
 
 **/bin
 node_modules
-
-api/public/route/wam/resources/wam/tutorial
+target
+resources/wam/tutorial
